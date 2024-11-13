@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="title">
+        <center>
+            <h1>MCQ Builder</h1>
+        </center>
+    </div>
+    <div class="section1">
+        <button>Help ?</button>
+        <dialog id="dialog-help">
+            <p>Step 1 : Select "4 Choices" or "5 Choices" depending on how many choices given for a question.</p>
+            <br>
+            Step 2 : Choose "Layout 1" or "Layout 2".
+            <br>
+            Step 2 : Type your questions and choices.<br>
+            Step 3 : After typing all MCQs click "Export as .docx" button to get the Word file.<br>
+            You can edit further more on Word
+            </p>
+            <form>
+                <button formmethod="dialog">Close</button>
+            </form>
+        </dialog>
+        <button onclick="Export2Word('main-container', 'Word-MCQ-Builder.docx');"  class="save-btn">Export as .docx</button>
+    </div>
+
+    <div class="section2">
+        <button onclick="addBtnLayout1and2()" id="btn-4choice">4 Choices</button>
+        <button onclick="addBtnLayout3and4()" id="btn-5choice">5 Choices</button>
+        <abbr title="Your content will be deleted after clicking this button">
+            <button onclick="window.location.reload()">Change # of Choices</button>
+        </abbr>
+    </div>
+
+    <div class="section3" id="section3">
+        <button id="btn-layout1" onclick="addLayout1()">Layout 1</button>
+        <button id="btn-layout2" onclick="addLayout2()">Layout 2</button>
+        <button id="btn-layout3" onclick="addLayout3()">Layout 3</button>
+        <button id="btn-layout4" onclick="addLayout4()">Layout 4</button>
+    </div>
+
+    <div class="main-container" id="main-container">
+        <table id="main-table" border="0">
+        </table>
+    </div>
+</body>
+</html>
+
+
