@@ -7,6 +7,24 @@ const btnChoice2 = document.getElementById("btn-5choice")
 const section3 = document.getElementById("section3")
 const mainContainer = document.getElementById("main-container")
 const table = document.getElementById("main-table");
+const dialogHelp= document.getElementById("dialog-help")
+
+function showHelp(){
+    dialogHelp.showModal()
+}
+
+// closing when outside of dialog is clicked
+dialogHelp.addEventListener("click", e => {
+    let dialogDimensions = dialogHelp.getBoundingClientRect()
+    if(
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ){
+      dialogHelp.close()
+    }
+})
 
 table.style.width = "100%"
 

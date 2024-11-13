@@ -50,3 +50,7 @@
 .section3 button{
     padding: 7px;
 }
+.section1 dialog{
+    margin: auto;
+    z-index: 1000;
+}
