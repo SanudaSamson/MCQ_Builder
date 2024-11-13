@@ -10,12 +10,12 @@ const table = document.getElementById("main-table");
 
 table.style.width = "100%"
 
-function Export2Word(element, filename = ''){
+function Export2Word(element, filename){
     if(mainContainer.innerText == ""){
         alert("Please type at least 1 MCQ to export.");
       }
     else{
-        var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+        var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='https://www.w3.org/TR/html5'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
         var postHtml = "</body></html>";
         var html = preHtml+mainContainer.innerHTML+postHtml;
         
@@ -176,4 +176,3 @@ btnLayout1.style.display = "none"
   section3.style.display = "flex"
 
 }
-      
