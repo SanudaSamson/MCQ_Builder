@@ -158,8 +158,8 @@ function addLayout4(){
     cell5.innerHTML = "<p contenteditable='true'>5.</p>";
 }
 function addBtnLayout1and2(){
-  btnLayout1.style.display = "inline"
-  btnLayout2.style.display = "inline"
+  btnLayout1.style.display = "inline-block"
+  btnLayout2.style.display = "inline-block"
   btnLayout3.style.display = "none"
   btnLayout4.style.display = "none"
   btnChoice2.style.cursor = "not-allowed"
@@ -167,8 +167,8 @@ function addBtnLayout1and2(){
   section3.style.display = "flex"
 }
 function addBtnLayout3and4(){
-  btnLayout3.style.display = "inline"
-  btnLayout4.style.display = "inline"
+  btnLayout3.style.display = "inline-block"
+  btnLayout4.style.display = "inline-block"
 btnLayout1.style.display = "none"
   btnLayout2.style.display = "none"
   btnChoice1.style.cursor = "not-allowed"
