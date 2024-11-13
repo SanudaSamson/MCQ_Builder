@@ -10,7 +10,7 @@ const table = document.getElementById("main-table");
 
 table.style.width = "100%"
 
-function Export2Word(element, filename){
+function Export2Word(element, filename = ''){
     if(mainContainer.innerText == ""){
         alert("Please type at least 1 MCQ to export.");
       }
